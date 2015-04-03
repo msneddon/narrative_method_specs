@@ -1,8 +1,12 @@
 ---
 language: perl
+perl:
+  - "5.18"
 script: make test
 
 before_install:
+  - git clone git://github.com/travis-perl/helpers ~/travis-perl-helpers
+  - source ~/travis-perl-helpers/init --auto
   - cpanm Exception::Class
 
 branches:
