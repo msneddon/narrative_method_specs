@@ -3,7 +3,6 @@ language: perl
 script: make test
 
 before_install:
-  - cpanm JSON::RPC::Client
   - cpanm Exception::Class
 
 branches:
