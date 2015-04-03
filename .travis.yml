@@ -1,7 +1,5 @@
 ---
 language: perl
-perl:
-  - "5.18"
 script: make test
 
 before_install:
