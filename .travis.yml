@@ -1,12 +1,7 @@
 ---
 language: perl
-perl:
-  - "5.18"
-script: make test
 
-install:
-  - cpan-install Exception::Class --deps
-  - cpan-install JSON::RPC::Client --deps
+script: make test
 
 branches:
   only:
