@@ -5,6 +5,8 @@ perl:
 script: make test
 
 before_install:
+  - git clone git://github.com/travis-perl/helpers ~/travis-perl-helpers
+  - source ~/travis-perl-helpers/init --auto
   - "cpanm JSON::RPC::Client"
   - "cpanm Exception::Class"
 
