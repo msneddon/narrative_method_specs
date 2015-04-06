@@ -4,7 +4,8 @@ language: perl
 perl:
   - "5.18"
 
-install: cpanm --verbose --quiet --installdeps --notest .
+install:
+  - cpan install JSON::RPC::Client
 
 script: make test
 
