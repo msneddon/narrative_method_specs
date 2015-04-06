@@ -5,7 +5,7 @@ perl:
   - "5.18"
 
 install:
-  - cpan install JSON::RPC::Client
+  - cpanm --verbose --notest JSON::RPC::Client
 
 script: make test
 
