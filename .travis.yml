@@ -1,6 +1,11 @@
 ---
 language: perl
 
+perl:
+  - "5.18"
+
+install:
+
 script: make test
 
 branches:
